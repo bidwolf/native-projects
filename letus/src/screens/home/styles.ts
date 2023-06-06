@@ -7,7 +7,8 @@ export const styles = StyleSheet.create({
       height:'100%',
       width:'100%',
       paddingVertical:40,
-      alignItems:'center'
+      alignItems:'center',
+      paddingHorizontal:16
     },
     title:{
         color:'#fff',
@@ -23,7 +24,7 @@ export const styles = StyleSheet.create({
         paddingVertical:40,
         alignItems:'center',
         flexDirection:'row',
-        width:'80%',
+        width:'100%',
         gap:8
     },
     input:{

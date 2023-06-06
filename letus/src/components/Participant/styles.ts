@@ -1,17 +1,18 @@
 import { StyleSheet } from "react-native";
 export const styles = StyleSheet.create({
     container:{
-        width:'80%',
         flexDirection:'row',
+        width:'95%',
         alignItems:"center",
         gap:8,
-        marginBottom:8
+        marginBottom:8,
+        marginHorizontal:16
     },
     name:{
         backgroundColor:'#ffffff20',
         padding:16,
-        width:'80%',
         color:'#fff',
+        width:'80%',
         fontSize:16
     },
     buttonText:{
