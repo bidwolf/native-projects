@@ -1,0 +1,29 @@
+import { StyleSheet } from "react-native";
+export const styles = StyleSheet.create({
+    container:{
+        width:'80%',
+        flexDirection:'row',
+        alignItems:"center",
+        gap:8,
+        marginBottom:8
+    },
+    name:{
+        backgroundColor:'#ffffff20',
+        padding:16,
+        width:'80%',
+        color:'#fff',
+        fontSize:16
+    },
+    buttonText:{
+        fontSize:32,
+        color:'#fff'
+    },
+    button:{
+        width:48,
+        height:48,
+        borderRadius:8,
+        backgroundColor:'#E23C44',
+        justifyContent:'center',
+        alignItems:'center'
+    }
+})
