@@ -54,8 +54,8 @@ export default function Home (){
           <FlatList showsVerticalScrollIndicator={false}
           data={participants}
           keyExtractor={item=>item}
-          renderItem={({item})=><Participant name={item} key={item} onRemove={()=>handleParticipantRemove("Henrique de Paula Rodrigues")}/>
-        }
+          renderItem={({item})=><Participant name={item} key={item} onRemove={()=>handleParticipantRemove("Henrique de Paula Rodrigues")}/>}
+          ListEmptyComponent={()=><Text>You haven't added participants for this event, you can do that, just fill the field above and click in the add button</Text>}
           />
         </View>
       );
