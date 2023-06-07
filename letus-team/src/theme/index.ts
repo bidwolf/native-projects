@@ -1,0 +1,31 @@
+export default{
+    colors:{
+        white:'#ffffff',
+        primary_500:'#2cc0ef',
+        primary_700:'#1939B7',
+        secondary_500:'#ef2cc0',
+        secondary_700:'#AC16A4',
+        tertiary_500:'#c0ef2c',
+        tertiary_700:'#9FCD20',
+        success:'#00BF75',
+        warning:'#FFD20C',
+        danger:'#FF5230',
+        gray_700:'#121214',
+        gray_600:'#202024',
+        gray_500:'#29292E',
+        gray_300:'#B3B3C0',
+        gray_200:'#DFDFEA',
+        gray_100:'#EFEFF4',
+
+    },
+    fontfamily:{
+        regular:'Roboto_400Regular',
+        bold:'Roboto_700Bold',
+    },
+    fontsize:{
+        sm:14,
+        md:16,
+        lg:18,
+        xl:24
+    }
+}
