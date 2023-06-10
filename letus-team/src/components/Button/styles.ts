@@ -19,6 +19,7 @@ background-color: ${({theme,type})=>type==='primary'
 position:relative;
 margin-top: 32px;
 bottom: 32px;
+border-radius: 8px;
 `
 export const ButtonText = styled.Text`
 text-align: center;
