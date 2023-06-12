@@ -9,10 +9,7 @@ import { Alert, FlatList } from "react-native";
 import { useState } from "react";
 import ListEmpty from "@components/ListEmpty";
 import { PlayerCard } from "@components/PlayerCard";
-type TNewGroupProps={
-    groupName:string
-    
-}
+import { useRoute } from "@react-navigation/native";
 type Player ={
     name:string
 }
@@ -20,7 +17,12 @@ type Team={
     name:string
     players:Player[]
 }
-export function NewPlayers({groupName}:TNewGroupProps){
+type RouteParams={
+    group:string
+}
+export function NewPlayers(){
+    const route = useRoute()
+    const {group}=route.params as RouteParams
     const [team,setTeam]=useState<Team[]>([{name:'time a',players:[]},{name:'time b',players:[]}]);
     const [currentTeam,setCurrentTeam]=useState<string>('time a')
     const [playerName,setPlayerName] =useState<string>("")
@@ -64,7 +66,7 @@ export function NewPlayers({groupName}:TNewGroupProps){
     return (
         <Container>
             <Header showBackButton/>
-            <Highlight title={groupName} subtitle="Adicione a galera e separe os times"/>
+            <Highlight title={group} subtitle="Adicione a galera e separe os times"/>
             <Form>
             <InputText placeholder="Nome do player" autoCorrect={false} onChangeText={(e)=>setPlayerName(e)} value={playerName}/>
             <ButtonIcon icon="add" onPress={()=>handlePlayerAdd(playerName)}/>
