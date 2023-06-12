@@ -9,5 +9,4 @@ padding: 16px;
 width: 100%;
 border-radius: 8px;
 font-size: ${({theme})=>theme.fontsize.lg}px;
-position: relative;
 `;
